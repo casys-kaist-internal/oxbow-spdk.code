@@ -89,6 +89,11 @@ xor_gen_basic(void *dest, void **sources, uint32_t n, uint32_t len)
 
 #define SPDK_XOR_BUF_ALIGN 32
 
+int xor_gen(int, int, void **){
+	printf("This function should not be called. It is empty function due to compilation error.\n");
+	return -1;
+}
+
 static int
 do_xor_gen(void *dest, void **sources, uint32_t n, uint32_t len)
 {

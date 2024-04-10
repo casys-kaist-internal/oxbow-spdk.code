@@ -12,7 +12,9 @@
 uint64_t
 spdk_crc64_nvme(const void *buf, size_t len, uint64_t crc)
 {
-	return crc64_rocksoft_refl(crc, (const uint8_t *)buf, len);
+	printf("This function should not be called. It is empty function due to compilation error.\n");
+	// return crc64_rocksoft_refl(crc, (const uint8_t *)buf, len);
+	return 0;
 }
 
 #else

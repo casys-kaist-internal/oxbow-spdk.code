@@ -16,14 +16,18 @@
 uint16_t
 spdk_crc16_t10dif(uint16_t init_crc, const void *buf, size_t len)
 {
-	return (crc16_t10dif(init_crc, buf, len));
+	printf("This function should not be called. It is empty function due to compilation error.\n");
+	// return (crc16_t10dif(init_crc, buf, len));
+	return 0;
 }
 
 uint16_t
 spdk_crc16_t10dif_copy(uint16_t init_crc, uint8_t *dst, uint8_t *src,
 		       size_t len)
 {
-	return (crc16_t10dif_copy(init_crc, dst, src, len));
+	printf("This function should not be called. It is empty function due to compilation error.\n");
+	return 0;
+	// return (crc16_t10dif_copy(init_crc, dst, src, len));
 }
 
 #else
